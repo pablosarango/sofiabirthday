@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación - Bella y la Bestia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Rose Petals -->
+    <div class="rose-petals" aria-hidden="true">
+        <div class="petal">🌹</div>
+        <div class="petal">🥀</div>
+        <div class="petal">🌹</div>
+        <div class="petal">🥀</div>
+        <div class="petal">🌹</div>
+        <div class="petal">🥀</div>
+        <div class="petal">🌹</div>
+        <div class="petal">🥀</div>
+        <div class="petal">🌹</div>
+        <div class="petal">🥀</div>
+    </div>
+
+    <!-- Enchanted Castle Background Elements -->
+    <div class="castle-silhouette"></div>
+    
+    <div class="container">
+        <!-- Ornate Frame Border -->
+        <div class="ornate-border"></div>
+        
+        <header class="header">
+            <!-- Enchanted Rose Under Glass -->
+            <div class="enchanted-rose">
+                <div class="glass-dome">
+                    <div class="rose-stem">
+                        <div class="rose-bloom">🌹</div>
+                        <div class="falling-petals">
+                            <span>🥀</span>
+                            <span>🥀</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            
+            <h1 class="title">
+                <span class="title-line">Una Invitación</span>
+                <span class="title-main">Encantada</span>
+            </h1>
+            
+            <div class="subtitle">
+                <span class="subtitle-icon">📖</span>
+                Érase una vez...
+                <span class="subtitle-icon">📖</span>
+            </div>
+            
+            <div class="story-scroll">
+                <p class="story-text">
+                    Te invitamos a ser parte de un cuento mágico donde los sueños se hacen realidad
+                </p>
+            </div>
+            
+            <div class="decorative-divider">
+                <span class="divider-ornament">✦</span>
+                <span class="divider-rose">🌹</span>
+                <span class="divider-ornament">✦</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Video Section -->
+            <section class="video-section">
+                <div class="video-container">
+                    <video 
+                        id="invitation-video" 
+                        autoplay 
+                        loop 
+                        muted
+                        playsinline
+                        poster="poster.jpg">
+                        <source src="InvitacionSofia.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                    <button class="unmute-btn" id="unmute-btn" aria-label="Activar sonido">
+                        <span class="mute-icon">🔇</span>
+                        <span class="unmute-text">Toca para escuchar</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Event Details -->
+            <section class="event-details">
+                <h2 class="section-title">
+                    <span class="ornament-left">❦</span>
+                    Detalles del Baile
+                    <span class="ornament-right">❦</span>
+                </h2>
+                
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <div class="card-ornament top-left">✦</div>
+                        <div class="card-ornament top-right">✦</div>
+                        <div class="detail-icon-container">
+                            <div class="detail-icon">📅</div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Fecha</h3>
+                        <p class="detail-main">Sábado, 15 de Noviembre</p>
+                        <p class="detail-sub">2025</p>
+                        <div class="card-shine"></div>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="card-ornament top-left">✦</div>
+                        <div class="card-ornament top-right">✦</div>
+                        <div class="detail-icon-container">
+                            <div class="detail-icon">🕐</div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Hora</h3>
+                        <p class="detail-main">3:00 PM</p>
+                        <p class="detail-sub">El reloj marca la hora del encanto</p>
+                        <div class="card-shine"></div>
+                    </div>
+                    
+                    <!-- <div class="detail-card">
+                        <div class="card-ornament top-left">✦</div>
+                        <div class="card-ornament top-right">✦</div>
+                        <div class="detail-icon-container">
+                            <div class="detail-icon">�</div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Vestimenta</h3>
+                        <p class="detail-main">Elegante de Gala</p>
+                        <p class="detail-sub">Digno del salón de baile real</p>
+                        <div class="card-shine"></div>
+                    </div> -->
+                </div>
+                
+                <!-- Book Quote -->
+                <div class="book-quote">
+                    <div class="book-icon">📚</div>
+                    <p class="quote-text">"La belleza está en el interior"</p>
+                </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="action-buttons">
+                <a href="#" id="location-btn" class="btn btn-location">
+                    <span class="btn-icon">🏰</span>
+                    <span class="btn-text">
+                        <span class="btn-title">El Castillo</span>
+                        <span class="btn-subtitle">Ver ubicación en el mapa</span>
+                    </span>
+                    <span class="btn-sparkle">✨</span>
+                </a>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-ornament">
+                <span class="ornament">❦</span>
+                <span class="footer-rose">🌹</span>
+                <span class="ornament">❦</span>
+            </div>
+            
+            <div class="footer-book">
+                <p class="footer-quote">"El verdadero amor rompe cualquier hechizo"</p>
+                <p class="footer-story">- Un Cuento de Bella y la Bestia -</p>
+            </div>
+            
+            <div class="footer-characters">
+                <span class="character">🌹</span>
+                <span class="character">📚</span>
+                <span class="character">🏰</span>
+                <span class="character">✨</span>
+            </div>
+            
+            <p class="footer-closing">Con todo nuestro cariño y un toque de magia</p>
+        </footer>
+    </div>
+
+    <!-- Magic Sparkles -->
+    <canvas id="sparkles-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
