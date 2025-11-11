@@ -175,6 +175,41 @@ body {
     }
 }
 
+/* Header Compact Version */
+.header-compact {
+    text-align: center;
+    padding: 20px 15px 15px;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.title-compact {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.4rem;
+    color: var(--royal-gold);
+    margin: 0 0 10px 0;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    font-weight: 700;
+}
+
+.name-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: var(--royal-gold);
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    animation: titleShine 4s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+    .title-compact {
+        font-size: 1.8rem;
+    }
+    
+    .name-title {
+        font-size: 3.5rem;
+    }
+}
+
 /* Enchanted Rose - Mobile First */
 .enchanted-rose {
     position: relative;
@@ -416,6 +451,34 @@ body {
     animation: fadeIn 1.5s ease-out;
 }
 
+/* Video Section Compact */
+.video-section-compact {
+    margin: 20px auto 15px;
+    max-width: 500px;
+    animation: fadeIn 1s ease-out;
+}
+
+.video-container-compact {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.6),
+        0 0 25px rgba(255, 215, 0, 0.2);
+    border: 3px solid var(--royal-gold);
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.video-container-compact video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
 .video-container {
     position: relative;
     background: rgba(0, 0, 0, 0.5);
@@ -504,6 +567,55 @@ body {
 .event-details {
     margin: 40px 0;
     animation: fadeInUp 1.2s ease-out;
+}
+
+/* Event Details Compact */
+.event-details-compact {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 500px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, 
+        rgba(139, 0, 0, 0.2) 0%, 
+        rgba(114, 47, 55, 0.3) 100%);
+    border-radius: 12px;
+    border: 2px solid var(--royal-gold);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info-icon {
+    font-size: 1.8rem;
+    min-width: 35px;
+    text-align: center;
+}
+
+.info-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--ivory);
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .info-row {
+        padding: 15px 20px;
+    }
+    
+    .info-icon {
+        font-size: 2rem;
+    }
+    
+    .info-text {
+        font-size: 1.1rem;
+    }
 }
 
 .section-title {
@@ -718,6 +830,58 @@ body {
     flex-wrap: wrap;
     margin: 40px 0;
     animation: fadeInUp 1.4s ease-out;
+}
+
+/* Action Buttons Compact */
+.action-buttons-compact {
+    margin: 20px auto 25px;
+    padding: 0 15px;
+    max-width: 500px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.btn-compact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 25px;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(135deg, 
+        rgba(74, 74, 74, 0.7) 0%, 
+        rgba(62, 39, 35, 0.9) 100%);
+    color: var(--royal-gold);
+    border: 3px solid var(--royal-gold);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.btn-compact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+    background: linear-gradient(135deg, 
+        rgba(74, 74, 74, 0.9) 0%, 
+        rgba(62, 39, 35, 1) 100%);
+}
+
+.btn-icon-compact {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .btn-compact {
+        padding: 18px 30px;
+        font-size: 1.2rem;
+    }
+    
+    .btn-icon-compact {
+        font-size: 1.8rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1143,6 +1307,33 @@ body {
     .footer {
         padding: 60px 20px 40px;
         margin-top: 80px;
+    }
+}
+
+/* Footer Compact */
+.footer-compact {
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 25px;
+    border-top: 2px solid var(--royal-gold);
+    animation: fadeIn 1.5s ease-out;
+}
+
+.footer-text-compact {
+    font-size: 1.5rem;
+    color: var(--royal-gold);
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+@media (min-width: 768px) {
+    .footer-compact {
+        padding: 30px 20px;
+        margin-top: 35px;
+    }
+    
+    .footer-text-compact {
+        font-size: 1.8rem;
     }
 }
 
